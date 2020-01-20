@@ -8,11 +8,11 @@ body {
     max-width: 820px;
 }
 
-h1, h2, h3 {
+h1, h2 {
     color: #999;
 }
 
-h3 {
+h2 {
     margin-top: 5em;
     margin-bottom: 2em;
 }
@@ -45,18 +45,18 @@ p {
 }
 
 .list-heading {
-    margin: 1em 0em;
+    margin: 0em 0em 1em 0em;
     color: #999;
     font-weight: bold;
 }
 
 .list-item {
-    margin: 0.4em 0.4em;
+    margin: 0.4em 1em;
     font-size: 0.9em;
 }
 
 .header-link {
-    margin-left: 0.3em;
+    margin-left: 0.2em !important;
 }
 
 .header-wrapper {
@@ -72,12 +72,13 @@ p {
     margin: 0.8em;
 }
 
-.header-wrapper p:nth-last-child(3) {
+.header-wrapper :first-child {
     margin-left: 0;
 }
 
 .wrapper {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: 0em 2em;
@@ -85,8 +86,8 @@ p {
 
 .box {
     flex: 1 1 auto;
-    width: 170px;
-    margin: 0.5em;
+    width: 100%;
+    margin: 0.5em 0em 1em 0em;
 }
 
 .box p {
